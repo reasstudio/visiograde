@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>VisioGrade - Terms of Service & Privacy Disclaimer</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta
+    name="description"
+    content="VisioGrade - Terms of Service & Privacy Disclaimer"
+  />
+  <style>
+    :root {
+      --bg: #0f172a;
+      --card: #020617;
+      --accent: #38bdf8;
+      --accent-soft: rgba(56, 189, 248, 0.1);
+      --text-main: #e5e7eb;
+      --text-muted: #9ca3af;
+      --border: rgba(148, 163, 184, 0.3);
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+        sans-serif;
+      background: radial-gradient(circle at top, #1e293b, #020617 48%);
+      color: var(--text-main);
+      line-height: 1.6;
+      padding: 32px 16px;
+      display: flex;
+      justify-content: center;
+    }
+
+    .container {
+      max-width: 900px;
+      width: 100%;
+      background: linear-gradient(
+          135deg,
+          rgba(148, 163, 184, 0.1),
+          transparent
+        ),
+        var(--card);
+      border-radius: 18px;
+      border: 1px solid var(--border);
+      box-shadow: 0 24px 80px rgba(15, 23, 42, 0.9);
+      padding: 28px 22px 28px;
+      position: relative;
+      overflow: hidden;
+    }
+
+    @media (min-width: 768px) {
+      body {
+        padding: 48px 24px;
+      }
+
+      .container {
+        padding: 40px 36px 36px;
+      }
+    }
+
+    .glow {
+      position: absolute;
+      inset: -120px;
+      opacity: 0.25;
+      background: radial-gradient(circle at 10% 0%, #38bdf8 0, transparent 55%),
+        radial-gradient(circle at 90% 120%, #4f46e5 0, transparent 55%);
+      pointer-events: none;
+      mix-blend-mode: screen;
+      z-index: -1;
+    }
+
+    header {
+      border-bottom: 1px solid var(--border);
+      padding-bottom: 18px;
+      margin-bottom: 26px;
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+
+    .app-name {
+      font-size: 0.85rem;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--accent);
+      font-weight: 600;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .app-dot {
+      width: 8px;
+      height: 8px;
+      border-radius: 999px;
+      background: var(--accent);
+      box-shadow: 0 0 16px rgba(56, 189, 248, 0.6);
+    }
+
+    h1 {
+      font-size: 1.7rem;
+      margin: 0;
+      letter-spacing: 0.03em;
+    }
+
+    .subtitle {
+      margin: 0;
+      color: var(--text-muted);
+      font-size: 0.95rem;
+    }
+
+    section {
+      margin-bottom: 22px;
+      padding: 16px 14px;
+      border-radius: 14px;
+      border: 1px solid rgba(148, 163, 184, 0.3);
+      background: radial-gradient(circle at top left, #020617, #020617);
+    }
+
+    section:nth-of-type(odd) {
+      background: radial-gradient(circle at top left, #020617, #020617);
+    }
+
+    section:nth-of-type(even) {
+      background: radial-gradient(circle at bottom right, #020617, #020617);
+    }
+
+    .section-title {
+      font-size: 1rem;
+      margin: 0 0 10px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .section-badge {
+      font-size: 0.8rem;
+      padding: 2px 8px;
+      border-radius: 999px;
+      border: 1px solid rgba(148, 163, 184, 0.6);
+      color: var(--text-muted);
+    }
+
+    .section-title span.number {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 22px;
+      height: 22px;
+      border-radius: 999px;
+      background: var(--accent-soft);
+      border: 1px solid rgba(56, 189, 248, 0.4);
+      font-size: 0.8rem;
+      color: var(--accent);
+      font-weight: 600;
+    }
+
+    .section-title span.label {
+      font-weight: 600;
+    }
+
+    p {
+      margin: 0 0 8px;
+      font-size: 0.94rem;
+    }
+
+    ul {
+      margin: 8px 0 4px 20px;
+      padding: 0;
+      font-size: 0.94rem;
+    }
+
+    li {
+      margin-bottom: 6px;
+    }
+
+    .highlight {
+      color: var(--accent);
+      font-weight: 500;
+    }
+
+    .strong {
+      font-weight: 600;
+    }
+
+    .footer-note {
+      margin-top: 18px;
+      font-size: 0.8rem;
+      color: var(--text-muted);
+      border-top: 1px dashed rgba(148, 163, 184, 0.4);
+      padding-top: 10px;
+    }
+
+    .tagline {
+      font-size: 0.8rem;
+      color: var(--text-muted);
+      margin-top: 4px;
+    }
+
+    code {
+      font-family: "SF Mono", Menlo, Monaco, Consolas, "Liberation Mono",
+        "Courier New", monospace;
+      font-size: 0.82rem;
+      background: rgba(15, 23, 42, 0.75);
+      padding: 2px 6px;
+      border-radius: 6px;
+      border: 1px solid rgba(148, 163, 184, 0.3);
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="glow" aria-hidden="true"></div>
+
+    <header>
+      <div class="app-name">
+        <span class="app-dot"></span>
+        VISIOGRADE
+      </div>
+      <h1>Legal Notice &amp; Consent</h1>
+      <p class="subtitle">
+        Terms of Service &amp; Privacy Disclaimer for the VisioGrade application.
+      </p>
+    </header>
+
+    <section id="nature-of-service">
+      <h2 class="section-title">
+        <span class="number">1</span>
+        <span class="label">Nature of Service &amp; AI Analysis</span>
+      </h2>
+      <p>
+        VisioGrade utilizes advanced Artificial Intelligence (AI) technologies to
+        analyze fashion combinations. By using this service, you acknowledge that
+        the scores, ratings, and style advice provided are generated by an
+        algorithm for <span class="strong">entertainment and informational
+        purposes only</span>. These results do not constitute professional
+        fashion advice.
+      </p>
+    </section>
+
+    <section id="data-privacy">
+      <h2 class="section-title">
+        <span class="number">2</span>
+        <span class="label">Data Privacy &amp; Zero-Retention Policy</span>
+        <span class="section-badge">Privacy</span>
+      </h2>
+      <p>
+        Your privacy is our priority. VisioGrade operates under a strictly
+        <span class="highlight">"transient processing"</span> model:
+      </p>
+      <ul>
+        <li>
+          <span class="strong">No Storage:</span> Images captured or uploaded by
+          you are <span class="strong">NOT</span> stored, archived, or retained
+          on VisioGrade's servers after the analysis is complete.
+        </li>
+        <li>
+          <span class="strong">Immediate Deletion:</span> Once the AI analysis is
+          finalized and the results are delivered to your device, the image data
+          is immediately discarded from our processing pipeline.
+        </li>
+      </ul>
+    </section>
+
+    <section id="third-party-processing">
+      <h2 class="section-title">
+        <span class="number">3</span>
+        <span class="label">Third-Party Processing</span>
+      </h2>
+      <p>
+        To perform the analysis, your image data is securely transmitted to our
+        third-party AI service providers (e.g., Google Gemini API). By
+        proceeding, you consent to this transmission <span class="strong">solely
+        for the purpose of generating your style score</span>.
+      </p>
+      <p>
+        We ensure that these providers process data in accordance with strict
+        security standards.
+      </p>
+    </section>
+
+    <section id="user-conduct">
+      <h2 class="section-title">
+        <span class="number">4</span>
+        <span class="label">User Conduct &amp; Prohibited Content</span>
+        <span class="section-badge">Usage Rules</span>
+      </h2>
+      <p>You agree strictly NOT to upload content that includes:</p>
+      <ul>
+        <li>Nudity, sexual content, or obscenity.</li>
+        <li>Violence, hate speech, or illegal activities.</li>
+        <li>
+          Biometric data or personally identifiable information of others without
+          consent.
+        </li>
+      </ul>
+      <p>
+        VisioGrade reserves the right to terminate access for users violating
+        these policies.
+      </p>
+    </section>
+
+    <section id="limitation-of-liability">
+      <h2 class="section-title">
+        <span class="number">5</span>
+        <span class="label">Limitation of Liability</span>
+        <span class="section-badge">Legal</span>
+      </h2>
+      <p>
+        THE SERVICE IS PROVIDED <span class="strong">"AS IS."</span> VISIOGRADE
+        SHALL NOT BE LIABLE FOR ANY DIRECT, INDIRECT, OR CONSEQUENTIAL DAMAGES
+        ARISING FROM YOUR USE OF THE APP OR RELIANCE ON THE AI-GENERATED
+        FEEDBACK.
+      </p>
+    </section>
+
+    <p class="tagline">
+      By continuing to use VisioGrade, you acknowledge that you have read, understood,
+      and agree to these terms.
+    </p>
+
+    <div class="footer-note">
+      This page is intended to be used as the official Terms of Service &amp;
+      Privacy Disclaimer for the VisioGrade application.
+      <br />
+      <span class="strong">Last updated:</span> <!-- Set a real date here, e.g. --> 2025-12-01
+    </div>
+  </div>
+</body>
+</html>
